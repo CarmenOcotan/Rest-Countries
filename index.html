@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links de bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <!-- Link de fonts-icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Links de fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- Refencias a carpeta app y estilos -->
+  <script src="./js/app.js" type="module" defer></script>
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Countries</title>
+</head>
+<body>
+  <!-- Dark Mode -->
+  <header>
+    <nav class="navbar fixed-top bg-body-tertiary bd">
+      <div class="container">
+        <h3 class="navbar-brand">Where in the world?</h3>
+        <div>
+          <button class ="btn d-flex gap-2" id="switch">
+            <span class="material-symbols-outlined luna">dark_mode</span>
+            <span class="nunito">Dark Mode</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+
+    <!-- Menu de busqueda -->
+    <div class="d-flex">
+        <form class="d-flex" role="search">
+          <span class="btn material-symbols-outlined busq">search</span>
+          <input class="form-control" type="search" placeholder="Search  for a country" aria-label="search" id="buscar">
+        </form>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filter by Region
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Africa</a></li>
+            <li><a class="dropdown-item" href="#">America</a></li>
+            <li><a class="dropdown-item" href="#">Asia</a></li>
+            <li><a class="dropdown-item" href="#">Europe</a></li>
+            <li><a class="dropdown-item" href="#">Oceania</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <section class="row row-cols-1 row-cols-md-3 row-cols-lg-4 gap-3" id="paises">
+        
+    </section>
+  </main>
+</body>
+</html>
+
