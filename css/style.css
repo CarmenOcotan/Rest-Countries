@@ -30,15 +30,15 @@ Weights: 300, 600, 800 */
 }
 
 .cardP {
-    max-width: 300px;
+    width: 300px;
     padding: 0;
 }
 
-/* .imgCard {
-    aspect-ratio: 1 / 1;
+.imgCard {
+   height: 175px;
+
   }
   
 .imgCard img {
     object-fit: cover;
   }
- */

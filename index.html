@@ -25,7 +25,7 @@
 </head>
 <body>
   <!-- Dark Mode -->
-  <header>
+  <header class="conteiner">
     <nav class="navbar fixed-top bg-body-tertiary bd">
       <div class="container">
         <h3 class="navbar-brand">Where in the world?</h3>
@@ -41,12 +41,15 @@
   <main class="main">
 
     <!-- Menu de busqueda -->
-    <div class="d-flex">
-        <form class="d-flex" role="search">
-          <span class="btn material-symbols-outlined busq">search</span>
-          <input class="form-control" type="search" placeholder="Search  for a country" aria-label="search" id="buscar">
-        </form>
-        <div class="dropdown">
+    <div class="conteiner">
+      <div class="row row-cols-lg-2 row-cols-1 justify-content-center">
+        <div class="col">
+          <form class="d-flex" role="search">
+            <span class="btn material-symbols-outlined busq">search</span>
+            <input class="form-control" type="search" placeholder="Search  for a country" aria-label="search" id="buscar">
+          </form>
+        </div>
+        <div class="dropdown col">
           <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Filter by Region
           </button>
@@ -58,10 +61,12 @@
             <li><a class="dropdown-item" href="#">Oceania</a></li>
           </ul>
         </div>
+      </div>
     </div>
 
     <!-- Cards -->
-    <section class="row row-cols-1 row-cols-md-3 row-cols-lg-4 gap-3" id="paises">
+    <section class="row row-cols-1 row-cols-md-3 row-cols-lg-4 gap-3 justify-content-center" id="paises">
+      
         
     </section>
   </main>
