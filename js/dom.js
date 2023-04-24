@@ -12,9 +12,9 @@ const nPais = tag => document.createElement(tag);
 const newCard = (obj) => {
     const div = nPais('div');
 
-    div.className = 'cardP col border rounded-4"';
+    div.className = 'cardP card col border rounded-4 bg-body-tertiary';
     div.innerHTML = `
-          <div class="img imgCard class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling ">
+          <div class="img imgCard" type="button" data-bs-toggle="offcanvas" id="${obj}" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling ">
             <img class="w-100 h-100" src="${obj.flags.svg}" alt="${obj.name.common}">
           </div>
           <div class="p-3">
@@ -55,6 +55,9 @@ const regiones =(region1) => {
   })
   
 };
+
+//Agregando las cards por separado
+
 
 export default {
     newCard,

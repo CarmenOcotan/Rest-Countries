@@ -42,15 +42,14 @@ limpiar.addEventListener('click', () => {
 
 //llamamos los paises por region 
 const regionPais = [...dom.$('#Regiones').children]
-
 regionPais.forEach(countries => {
 
   countries.addEventListener('click', () => {
-    if (countries === region2){
-       /* let filtro =  */ console.log(countries.textContent);
-    const filtered = filtro === '' ? datos : data.filtrar(datos, filtro);;
+    let filtro = countries.textContent;
+    const filtered = filtro === '' ? datos : data.filtrar(datos, filtro);
+    console.log(filtered);
     dom.mostrarPaises(filtered)}
-  })
+  )
   
 })
 

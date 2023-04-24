@@ -29,9 +29,8 @@ const regi = (data) => {
 }
 
 const filtrar = (arr, filtro) => {
-  
   let filtered = arr.filter( elem => elem.region === filtro)
-
+  
   return filtered
 };
 
