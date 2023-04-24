@@ -12,9 +12,9 @@ const nPais = tag => document.createElement(tag);
 const newCard = (obj) => {
     const div = nPais('div');
 
-    div.className = 'cardP col border rounded-4';
+    div.className = 'cardP col border rounded-4"';
     div.innerHTML = `
-          <div class="img imgCard ">
+          <div class="img imgCard class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling ">
             <img class="w-100 h-100" src="${obj.flags.svg}" alt="${obj.name.common}">
           </div>
           <div class="p-3">
@@ -27,6 +27,7 @@ const newCard = (obj) => {
           </div>`
     return div;
 }
+//Mostraremos los paises en cada card
 
 const mostrarPaises = (arr) => {
 
@@ -42,9 +43,22 @@ const mostrarPaises = (arr) => {
     })
   }
 
+//Agrego las regiones
+const regiones =(region1) => {
+  const listaRegiones = $('#Regiones');
+  region1.forEach(elem =>{
+    const li = nPais('li');
+    li.className =`text-nowraps regi`
+    li.innerHTML = `<a class="dropdown-item" href="#">${elem}</a>`
+
+    listaRegiones.appendChild(li)
+  })
+  
+};
 
 export default {
     newCard,
     $,
-    mostrarPaises
+    mostrarPaises,
+    regiones
 }

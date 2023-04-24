@@ -18,7 +18,8 @@ Weights: 300, 600, 800 */
 }
 
 .main{
-    padding-top: 90px;
+    /* padding-top: 90px; */
+    margin:80px
 }
 
 .nunito{
@@ -42,3 +43,12 @@ Weights: 300, 600, 800 */
 .imgCard img {
     object-fit: cover;
   }
+
+.mw {
+    margin: 0%;
+    width: 100%;
+}
+
+.l {
+    height: 4rem;
+}
