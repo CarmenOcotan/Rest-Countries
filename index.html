@@ -30,7 +30,7 @@
       <div class="container">
         <h3 class="navbar-brand">Where in the world?</h3>
         <div>
-          <button class ="btn d-flex gap-2" id="switch">
+          <button class ="btn d-flex gap-2 navDark" id="switch">
             <span class="material-symbols-outlined luna">dark_mode</span>
             <span class="nunito">Dark Mode</span>
           </button>
@@ -41,35 +41,65 @@
   <main class="main">
 
     <!-- Menu de busqueda -->
-    <div class="conteiner">
-      <div class="row row-cols-lg-2 row-cols-1 justify-content-center">
-        <div class="col">
-          <form class="d-flex" role="search">
-            <span class="btn material-symbols-outlined busq">search</span>
-            <input class="form-control" type="search" placeholder="Search  for a country" aria-label="search" id="buscar">
-          </form>
+    <div class="conteiner-fluid mb-5">
+      <div class="row mw gap-3">
+        <div class="col-lg-4">
+          <div class="d-flex border rounded-4 ">
+            <span class="btn disabled border-0 material-symbols-outlined busq">search</span>
+            <input class="form-control border-0 h-100" type="search" placeholder="Search  for a country" aria-label="search" id="buscar">
+            <button id="limpiar" class="btn">x</button>
+          </div>
         </div>
-        <div class="dropdown col">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="dropdown col-lg-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="nombreRegion">
               Filter by Region
           </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Africa</a></li>
-            <li><a class="dropdown-item" href="#">America</a></li>
-            <li><a class="dropdown-item" href="#">Asia</a></li>
-            <li><a class="dropdown-item" href="#">Europe</a></li>
-            <li><a class="dropdown-item" href="#">Oceania</a></li>
+          <ul class="dropdown-menu" id="Regiones">
+            <!-- Aca van las regiones -->
           </ul>
         </div>
       </div>
     </div>
 
     <!-- Cards -->
-    <section class="row row-cols-1 row-cols-md-3 row-cols-lg-4 gap-3 justify-content-center" id="paises">
-      
-        
+    <section class="mw row row-cols-1 row-cols-md-3 row-cols-lg-4 gap-3 justify-content-center justify-content-lg-between" id="paises">
+        <!-- Aca van todas las cardas -->
+
     </section>
   </main>
+      <!-- INsertando el offcanvas -->
+      <div class="offcanvas offcanvas-start w-100 h-100" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <!-- Dark Mode -->
+          <nav class="navbar fixed-top bg-body-tertiary bd">
+            <div class="container">
+              <h3 class="navbar-brand ">Where in the world?</h3>
+              <div>
+                <button class ="btn d-flex gap-2 navDark" id="switch2">
+                  <span class="material-symbols-outlined luna">dark_mode</span>
+                  <span class="nunito">Dark Mode</span>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+  
+        <div class="offcanvas-body mt-5">
+          <div class="container-fluid">
+            <div class="back pb-5">
+              <button type="button" class="btn border rounded-2 d-flex flex-nowrap align-items-center justify-content-center gap-2" data-bs-dismiss="offcanvas">
+                <span class="material-symbols-outlined">keyboard_backspace</span>
+                <span>Back</span>
+              </button>
+            </div>
+            <div class="container-fluid gap-3" id="infoPais">
+              <!-- Aca van las cards con la info individual -->
+  
+              
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
 

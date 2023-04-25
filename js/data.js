@@ -20,10 +20,33 @@ const nombrePais = (arr, filtro) => {
     return filtered
 }
 
+//Traemos los datos de las regiones
+const regi = (data) => {
+  let unico = data.map(elem => elem.region);
+  unico = new  Set(unico);
+  unico =[...unico];
+  return unico
+}
+
+const filtrar = (arr, filtro) => {
+  let filtered = arr.filter( elem => elem.region === filtro)
+  
+  return filtered
+};
+
+const paisxnombre =(arr, filtro) => {
+  let unoSolo = arr.filter(elem => elem.name.common == filtro)
+  
+  return unoSolo
+
+}
 
 export default {
     getData,
     nombrePais,
+    regi,
+    filtrar,
+    paisxnombre
 }
   
 

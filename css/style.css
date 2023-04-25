@@ -18,13 +18,30 @@ Weights: 300, 600, 800 */
 }
 
 .main{
-    padding-top: 90px;
+    /* padding-top: 90px; */
+    margin-top:80px
 }
 
 .nunito{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;   
 }
+
+.nun{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;   
+}
+
+.nu{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800; 
+    font-size: 2rem;
+
+}
+
+
+
+
 .bd {
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1)
 }
@@ -36,9 +53,25 @@ Weights: 300, 600, 800 */
 
 .imgCard {
    height: 175px;
-
+    
   }
   
 .imgCard img {
     object-fit: cover;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
   }
+
+.mw {
+    margin: 0%;
+    width: 100%;
+}
+
+.l {
+    height: 4rem;
+}
+
+.ima img {
+    object-fit: cover;
+  }
+
