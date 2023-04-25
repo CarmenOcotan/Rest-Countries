@@ -19,7 +19,9 @@ Weights: 300, 600, 800 */
 
 .main{
     /* padding-top: 90px; */
-    margin-top:80px
+    margin-top:80px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .nunito{
