@@ -53,8 +53,10 @@ regionPais.forEach(countries => {
   
 })
 
+//llamando las cards de madera individual haciendo click
+
 const paisMostrar = document.querySelectorAll('.card');
-console.log(paisMostrar)
+
 paisMostrar.forEach(CadaUno =>{
 // console.log(paisMostrar)
   CadaUno.addEventListener('click', () => {
@@ -63,7 +65,8 @@ paisMostrar.forEach(CadaUno =>{
 
   const filtered = filtro === '' ? datos : data.paisxnombre(datos, filtro);
     dom.mInfoPais(filtered)
-    console.log('hola')
+    console.log(filtered)
+   
   })
 })
 

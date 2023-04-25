@@ -11,8 +11,6 @@ const getData = async () => {
   
   }
 
-  
-
 //Mandamos a traer los datos por pais
 const nombrePais = (arr, filtro) => {
   
