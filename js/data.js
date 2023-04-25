@@ -11,6 +11,8 @@ const getData = async () => {
   
   }
 
+  
+
 //Mandamos a traer los datos por pais
 const nombrePais = (arr, filtro) => {
   
@@ -34,11 +36,19 @@ const filtrar = (arr, filtro) => {
   return filtered
 };
 
+const paisxnombre =(arr, filtro) => {
+  let unoSolo = arr.filter(elem => elem.name.common == filtro)
+  
+  return unoSolo
+
+}
+
 export default {
     getData,
     nombrePais,
     regi,
-    filtrar
+    filtrar,
+    paisxnombre
 }
   
 

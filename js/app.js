@@ -2,7 +2,7 @@ import data from "./data.js";
 import dom from "./dom.js";
 
 const datos = await data.getData();
-
+console.log(datos)
 const region2 = data.regi(datos)
 
 dom.regiones(region2)
@@ -53,6 +53,19 @@ regionPais.forEach(countries => {
   
 })
 
+const paisMostrar = document.querySelectorAll('.card');
+console.log(paisMostrar)
+paisMostrar.forEach(CadaUno =>{
+// console.log(paisMostrar)
+  CadaUno.addEventListener('click', () => {
+  let filtro = CadaUno.id;
+  console.log(CadaUno);
+
+  const filtered = filtro === '' ? datos : data.paisxnombre(datos, filtro);
+    dom.mInfoPais(filtered)
+    console.log('hola')
+  })
+})
 
 //Dark mode
 
